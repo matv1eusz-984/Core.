@@ -25,6 +25,15 @@ export async function sendEmail(formData: FormData) {
       }
     };
 
+    if (!data.service_id || !data.template_id || !data.user_id) {
+      console.error("EmailJS keys are missing in environment variables!", {
+        service: !!data.service_id,
+        template: !!data.template_id,
+        user: !!data.user_id
+      });
+      return { success: false, error: "Configuration error" };
+    }
+
     const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
       method: "POST",
       headers: {
@@ -34,10 +43,12 @@ export async function sendEmail(formData: FormData) {
     });
 
     if (response.ok) {
+      console.log("Email sent successfully via EmailJS");
       return { success: true };
     } else {
-      console.error("EmailJS Error:", await response.text());
-      return { success: false, error: "Failed to send email via EmailJS" };
+      const errorText = await response.text();
+      console.error("EmailJS Error Response:", errorText);
+      return { success: false, error: `EmailJS Error: ${errorText}` };
     }
   } catch (error) {
     console.error("Email send error:", error);

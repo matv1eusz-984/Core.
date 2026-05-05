@@ -48,8 +48,8 @@ export default function StickyScrollFeatures({ dict }: { dict: any }) {
         <div className="w-full h-[40vh] md:w-1/2 md:h-full flex items-center justify-center relative bg-gradient-to-br from-primary/5 to-transparent border-b md:border-b-0 md:border-r border-[var(--glass-border)]">
           
           {/* Visual 1: UI Design */}
-          <motion.div style={{ opacity: op1, rotateY: v1Rotate, y: v1Y }} className="absolute inset-x-0 bottom-0 top-20 md:top-0 flex items-center justify-center pointer-events-none perspective-1000">
-             <div className="relative w-[70vw] h-[30vh] md:w-80 md:h-96">
+          <motion.div style={{ opacity: op1, rotateY: v1Rotate, y: v1Y }} className="absolute inset-x-0 bottom-10 top-20 md:top-0 flex items-center justify-center pointer-events-none perspective-1000">
+             <div className="relative w-[70vw] h-[25vh] md:w-80 md:h-96">
                 <div className="absolute inset-0 bg-white/5 backdrop-blur-2xl border border-white/20 rounded-[2.5rem] shadow-2xl overflow-hidden">
                    <div className="h-12 bg-white/10 flex items-center px-6 gap-2">
                       <div className="w-3 h-3 rounded-full bg-red-500/40" />
@@ -80,7 +80,7 @@ export default function StickyScrollFeatures({ dict }: { dict: any }) {
           </motion.div>
 
           {/* Visual 2: Engineering */}
-          <motion.div style={{ opacity: op2 }} className="absolute inset-x-0 bottom-0 top-20 md:top-0 flex items-center justify-center pointer-events-none">
+          <motion.div style={{ opacity: op2 }} className="absolute inset-x-0 bottom-10 top-20 md:top-0 flex items-center justify-center pointer-events-none">
              <div className="w-[85vw] md:w-96 p-4 md:p-8 bg-[#0a0a0a] rounded-3xl border border-white/10 font-mono text-xs md:text-sm overflow-hidden shadow-2xl">
                 <div className="flex gap-2 mb-6">
                    <Code className="text-primary w-5 h-5" />
@@ -112,8 +112,8 @@ export default function StickyScrollFeatures({ dict }: { dict: any }) {
           </motion.div>
 
           {/* Visual 3: Future Ready */}
-          <motion.div style={{ opacity: op3 }} className="absolute inset-x-0 bottom-0 top-20 md:top-0 flex items-center justify-center pointer-events-none">
-             <div className="relative w-64 h-64">
+          <motion.div style={{ opacity: op3 }} className="absolute inset-x-0 bottom-10 top-20 md:top-0 flex items-center justify-center pointer-events-none">
+             <div className="relative w-48 h-48 md:w-64 md:h-64">
                 <motion.div 
                    style={{ rotate: v3Rotate }}
                    className="absolute inset-0 border-4 border-dashed border-primary/30 rounded-full"
@@ -123,19 +123,19 @@ export default function StickyScrollFeatures({ dict }: { dict: any }) {
                    className="absolute inset-4 border-2 border-dashed border-accent/30 rounded-full"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                   <div className="w-24 h-24 bg-gradient-to-br from-primary to-accent rounded-3xl shadow-2xl flex items-center justify-center transform rotate-12">
-                      <Globe className="text-white w-12 h-12 animate-pulse" />
+                   <div className="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-primary to-accent rounded-2xl md:rounded-3xl shadow-2xl flex items-center justify-center transform rotate-12">
+                      <Globe className="text-white w-8 h-8 md:w-12 md:h-12 animate-pulse" />
                    </div>
                 </div>
              </div>
           </motion.div>
 
           {/* Visual 4: Security */}
-          <motion.div style={{ opacity: op4 }} className="absolute inset-x-0 bottom-0 top-20 md:top-0 flex items-center justify-center pointer-events-none">
+          <motion.div style={{ opacity: op4 }} className="absolute inset-x-0 bottom-10 top-20 md:top-0 flex items-center justify-center pointer-events-none">
              <motion.div style={{ scale: v4Scale }} className="relative">
                 <div className="absolute inset-0 bg-green-500/20 blur-3xl rounded-full" />
                 <div className="relative w-32 h-32 md:w-48 md:h-48 bg-white/5 backdrop-blur-md border border-green-500/30 rounded-full flex items-center justify-center shadow-2xl">
-                   <Shield className="text-green-500 w-12 h-12 md:w-24 md:h-24" />
+                   <Shield className="text-green-500 w-12 h-12 md:w-16 md:h-16" />
                    <motion.div 
                      animate={{ opacity: [0, 1, 0] }}
                      transition={{ duration: 2, repeat: Infinity }}
@@ -146,13 +146,13 @@ export default function StickyScrollFeatures({ dict }: { dict: any }) {
           </motion.div>
 
           {/* Visual 5: AI / Visionary */}
-          <motion.div style={{ opacity: op5 }} className="absolute inset-x-0 bottom-0 top-20 md:top-0 flex items-center justify-center pointer-events-none">
+          <motion.div style={{ opacity: op5 }} className="absolute inset-x-0 bottom-10 top-20 md:top-0 flex items-center justify-center pointer-events-none">
              <div className="relative w-80 h-80">
                 <Sparkles className="absolute top-0 right-0 text-primary w-12 h-12 animate-pulse" />
                 <Cpu className="absolute bottom-0 left-0 text-accent w-16 h-16 animate-bounce" />
                 <motion.div 
-                  style={{ opacity: v5Opacity }}
-                  className="absolute inset-0 flex items-center justify-center"
+                   style={{ opacity: v5Opacity }}
+                   className="absolute inset-0 flex items-center justify-center"
                 >
                    <div className="w-32 h-32 md:w-48 md:h-48 bg-gradient-to-tr from-primary/40 to-accent/40 blur-[40px] md:blur-[80px] rounded-full animate-pulse" />
                    <div className="relative z-10 text-4xl md:text-6xl font-black text-gradient italic tracking-tighter">AI CORE</div>

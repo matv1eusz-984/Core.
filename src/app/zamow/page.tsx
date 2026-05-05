@@ -31,6 +31,7 @@ export default function OrderPage() {
       form.append("message", `[TYP KLIENTA: ${clientType.toUpperCase()}]\n\n${form.get("message")}\n\nNIP: ${form.get("nip")}`);
       
       const res = await sendEmail(form);
+      console.log("Server Action Response:", res);
       if (res.success) {
         setStatus("success");
       } else {
