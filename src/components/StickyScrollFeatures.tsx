@@ -45,7 +45,7 @@ export default function StickyScrollFeatures({ dict }: { dict: any }) {
       <div className="sticky top-0 h-screen w-full flex flex-col md:flex-row items-center overflow-hidden pt-20 md:pt-0">
         
         {/* Left/Top side Sticky Visuals */}
-        <div className="w-full h-[40vh] md:w-1/2 md:h-full flex items-center justify-center relative bg-gradient-to-br from-primary/5 to-transparent border-b md:border-b-0 md:border-r border-[var(--glass-border)]">
+        <div className="w-full h-[40vh] md:w-1/2 md:h-full flex items-center justify-center relative bg-gradient-to-br from-primary/5 to-transparent border-b-0 md:border-r border-[var(--glass-border)]">
           
           {/* Visual 1: UI Design */}
           <motion.div style={{ opacity: op1, rotateY: v1Rotate, y: v1Y }} className="absolute inset-x-0 bottom-10 top-20 md:top-0 flex items-center justify-center pointer-events-none perspective-1000">
