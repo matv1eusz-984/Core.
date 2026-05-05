@@ -1,26 +1,196 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: #0070f3;
+  --color-secondary: #ff0080;
+  --color-accent: #7928ca;
+  --color-glass: var(--glass);
+  --color-glass-border: var(--glass-border);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  /* Apple Light Mode - Refined for High Contrast */
+  --background: #ffffff;
+  --foreground: #1d1d1f;
+  --glass: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --mesh-c1: hsla(210, 40%, 98%, 1);
+  --mesh-c2: hsla(280, 30%, 98%, 1);
+  --mesh-c3: hsla(330, 40%, 98%, 1);
+  --text-gradient-start: #000000;
+  --text-gradient-end: #434344;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --navbar-glass: rgba(255, 255, 255, 0.8);
+}
+
+.dark {
+  /* Apple Dark Mode - Refined */
+  --background: #000000;
+  --foreground: #f5f5f7;
+  --glass: rgba(20, 20, 20, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --mesh-c1: hsla(253, 16%, 7%, 1);
+  --mesh-c2: hsla(225, 39%, 15%, 1);
+  --mesh-c3: hsla(339, 49%, 15%, 1);
+  --text-gradient-start: #ffffff;
+  --text-gradient-end: #a1a1a6;
+  --card-bg: rgba(20, 20, 22, 0.8);
+  --navbar-glass: rgba(0, 0, 0, 0.8);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 112, 243, 0.4);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 112, 243, 0.7);
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(0, 112, 243, 0.5);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 112, 243, 0.8);
+}
+
+/* Glassmorphism Ultra-Premium */
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(32px) saturate(180%);
+  -webkit-backdrop-filter: blur(32px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card {
+  background: var(--card-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  border-radius: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.dark .card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--text-gradient-start) 0%, var(--text-gradient-end) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  margin-top: -0.1em;
+  margin-bottom: -0.1em;
+}
+
+/* Premium Magnetic Button */
+.btn-premium {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 9999px;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-premium::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: top 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: -1;
+}
+
+.btn-premium:hover::before {
+  top: 0;
+}
+
+/* Mesh Gradient Background with Grain */
+.mesh-bg {
+  position: relative;
+  background-color: var(--background);
+  background-image: 
+    radial-gradient(at 0% 0%, var(--mesh-c1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, var(--mesh-c2) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, var(--mesh-c3) 0, transparent 50%);
+  background-attachment: fixed;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mesh-bg::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Animations */
+@keyframes mesh-animate {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-slow-bounce {
+  animation: mesh-animate 10s infinite ease-in-out;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes accordion-down {
+  from { height: 0; opacity: 0; }
+  to { height: var(--radix-accordion-content-height); opacity: 1; }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); opacity: 1; }
+  to { height: 0; opacity: 0; }
+}
+
+.animate-accordion-down {
+  animation: accordion-down 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.animate-accordion-up {
+  animation: accordion-up 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+  display: flex;
 }

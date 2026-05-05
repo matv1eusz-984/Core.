@@ -1,0 +1,154 @@
+{
+  "hero": {
+    "title": "OD kliknięcia\nDO klienta\nŁowimy dla Ciebie \n...klientów\n... w sieci",
+    "subtitle": "Nie robimy zwykłych wizytówek. Tworzymy ultraszybkie, zjawiskowe strony internetowe, które budują prestiż Twojej marki i zamieniają odwiedzających w płacących klientów.",
+    "cta": "Rozpocznij Projekt",
+    "viewWork": "Zobacz Nasze Prace"
+  },
+  "services": {
+    "title": "Nasze Usługi",
+    "subtitle": "Dostarczamy kompleksowe rozwiązania cyfrowe, które łączą kreatywność z doskonałością techniczną.",
+    "webDesign": "Projektowanie UX/UI",
+    "webDesignDesc": "Projektujemy ścieżki, którymi chcą podążać klienci. Intuicyjny interfejs, który naturalnie prowadzi do konwersji.",
+    "development": "Programowanie Full-stack",
+    "developmentDesc": "Przekuwamy śmiałe wizje w bezawaryjny produkt. Od płynnych animacji po zaawansowane systemy na zapleczu.",
+    "seo": "Optymalizacja SEO & Wydajność",
+    "seoDesc": "Optymalizacja strony pod kątem szybkości i widoczności w wyszukiwarkach.",
+    "aiEmails": "Automatyzacja E-mail AI",
+    "aiEmailsDesc": "Wdrażamy inteligentne systemy działające 24/7, gwarantujące błyskawiczne, spersonalizowane i precyzyjne szybkie odpowiedzi na maile klientów."
+  },
+  "portfolio": {
+    "title": "Nasze Specjalizacje",
+    "projects": [
+      {
+        "title": "Visionary OS",
+        "category": "PWA Native Layer",
+        "slug": "visionary-os"
+      },
+      {
+        "title": "Spatial Commerce",
+        "category": "E-Commerce 3D",
+        "slug": "spatial-commerce"
+      },
+      {
+        "title": "Neo Banking",
+        "category": "Aplikacja Fintech",
+        "slug": "neo-banking"
+      }
+    ]
+  },
+  "common": {
+    "pricing": "Opcje",
+    "portfolio": "Specjalizacje",
+    "contact": "Kontakt",
+    "offer": "Oferta",
+    "order": "Wycena",
+    "copied": "Skopiowano e-mail do schowka"
+  },
+  "bento": {
+    "title": "Wszystko czego potrzebujesz.",
+    "subtitle": "Połączyliśmy najlepsze technologie z dbałością o każdy szczegół.",
+    "f1Title": "Wydajność na Pierwszym Miejscu",
+    "f1Desc": "Ułamek sekundy robi różnicę. Nasze strony ładują się błyskawicznie. Koniec z traceniem klientów przez irytujące paski ładowania.",
+    "f2Title": "Zaprojektowane z Zaufaniem",
+    "f2Desc": "Kuloodporna niezawodność. Czysty kod i nowoczesna infrastruktura sprawiają, że Twoja witryna wytrzyma każdy ruch – nawet podczas największych kampanii.",
+    "f3Title": "Wsparcie Sztucznej Inteligencji",
+    "f3Desc": "Skaluje się do Twojej wizji, napędzane inteligentnymi algorytmami.",
+    "f4Title": "Mobilna Płynność",
+    "f4Desc": "Kieszonkowy luksus. Ponad 70% ruchu pochodzi ze smartfonów. Nasze projekty zachowują kinową płynność i perfekcyjny wygląd na każdym, nawet najmniejszym ekranie.",
+    "f5Title": "Bezgraniczna Skalowalność",
+    "f5Desc": "Infrastruktura Edge gotowa na globalny zasięg. Twoja strona obsłuży potężny ruch zachowując maksymalną stabilność."
+  },
+  "sticky": {
+    "s1Title": "Zaprojektowane z Zamysłem",
+    "s1Desc": "Każdy pixel, każda animacja i każda linijka tekstu mają jeden cel: wzbudzić zaufanie i poprowadzić Twojego klienta prosto do zakupu.",
+    "s2Title": "Inżynieryjna Perfekcja",
+    "s2Desc": "Zapomnij o wolno ładujących się szablonach. Piszemy kod od zera, gwarantując błyskawiczne działanie, które zatrzyma uwagę użytkownika od pierwszej sekundy.",
+    "s3Title": "Gotowość na Przyszłość",
+    "s3Desc": "Rozrasta się wraz z Tobą. Absolutnie magnetyczne doświadczenie cyfrowe.",
+    "s4Title": "Bezkompromisowe Bezpieczeństwo",
+    "s4Desc": "Twój biznes musi działać 24/7. Wykorzystujemy standardy bezpieczeństwa z sektora finansowego, aby Twoja strona była zawsze dostępna i odporna na ataki.",
+    "s5Title": "Wsparcie Sztucznej Inteligencji",
+    "s5Desc": "Wyprzedzaj konkurencję. Wdrażamy inteligentne automatyzacje, które ułatwiają skalowanie i zarządzanie procesami."
+  },
+  "pricingDetails": {
+    "title": "Opcje Współpracy",
+    "subtitle": "Nie korzystamy z szablonów i nie rozliczamy się 'za ilość podstron'. Budujemy strony z wykorzystaniem najnowocześniejszych technologii i z bezkompromisową dbałością o każdy pojedynczy detal.",
+    "p1Title": "Cyfrowe Fundamenty",
+    "p1Price": "Na miarę",
+    "p1Features": ["Dedykowana architektura UI/UX", "Nowoczesne frameworki React", "Nieskazitelne standardy wydajności", "Semantyczna i rygorystyczna budowa"],
+    "p2Title": "Wizja Ultra-Premium",
+    "p2Price": "Dopracowane",
+    "p2Features": ["Zjawiskowe elementy 3D i WebGL", "Architektura Edge w Next.js", "Perfekcyjne mikro-interakcje", "Złożone sekwencje Framer Motion", "Globalna dystrybucja CDN"],
+    "p3Title": "Ekosystem Enterprise",
+    "p3Price": "Skalowalne",
+    "p3Features": ["Złożone dedykowane backendy", "Integracja chmurowa", "Bezkompromisowe bezpieczeństwo", "Nieskończona Skalowalność"],
+    "action": "Omów Twój Projekt",
+    "trustInfo": "Pracujemy transparentnie. Wystawiamy faktury VAT, a płatności zabezpieczamy systemem Escrow (płacisz dopiero, gdy akceptujesz efekty naszej pracy)."
+  },
+  "marquee": {
+    "title": "Technologie, które dają Ci nieuczciwą przewagę na rynku."
+  },
+  "showcase": {
+    "title": "Precyzja w Nieskończonej Skali",
+    "desc": "Przesuwamy absolutne granice możliwości współczesnych przeglądarek. Tworzymy płynne, bezbłędne doświadczenia, które zamieniają odwiedzających w lojalnych klientów."
+  },
+  "approach": {
+    "text": "Pionierzy na styku wyjątkowego designu i nowatorskiej inżynierii. Tworzymy cyfrowe doświadczenia, które absolutnie zatrzymują wzrok i działają na zmysły."
+  },
+  "footer": {
+    "desc": "Tworzymy cyfrowe arcydzieła, które pomagają markom wyróżnić się w zatłoczonym świecie.",
+    "rights": "CORE Premium Web Agency. Wszelkie prawa zastrzeżone.",
+    "builtWith": "Zbudowane z pasją i precyzją.",
+    "contact": "KONTAKT",
+    "formName": "Imię",
+    "formEmail": "Email",
+    "formMessage": "Wiadomość",
+    "formPlaceholderName": "Twoje Imię",
+    "formPlaceholderEmail": "hello@przyklad.com",
+    "formPlaceholderMessage": "Opowiedz nam o swoim projekcie...",
+    "formSubmit": "Wyślij Wiadomość",
+    "formSuccessTitle": "Wiadomość Wysłana!",
+    "formSuccessDesc": "Dziękujemy za kontakt. Nasz zespół odezwie się wkrótce.",
+    "formSubmitAnother": "Wyślij Kolejną",
+    "formError": "Coś poszło nie tak. Spróbuj ponownie."
+  },
+  "seo": {
+    "home": {
+      "title": "CORE Premium Web Agency | Ekskluzywne Strony Internetowe",
+      "description": "Tworzymy luksusowe, wysokowydajne strony internetowe dla wymagających klientów. Wykorzystujemy 3D, WebGL i Next.js."
+    },
+    "specializations": {
+      "title": "Specjalizacje | CORE Premium",
+      "description": "Nasze kluczowe kompetencje: Visionary OS, Spatial Commerce i Neo Banking."
+    }
+  },
+  "faq": {
+    "title": "Często Zadawane Pytania",
+    "q1": "Czy podpisujemy umowę?",
+    "a1": "Tak. Działam jako osoba prywatna na podstawie Umowy o Zlecenie, realizowanej bezpośrednio lub przez platformy typu Useme, co daje Ci pełne bezpieczeństwo prawne i fakturę z przeniesieniem praw autorskich.",
+    "q2": "Jak wygląda proces płatności?",
+    "a2": "Zazwyczaj pobieram zaliczkę 30% przed rozpoczęciem prac, a resztę po akceptacji finalnego projektu przed wdrożeniem na Twój serwer.",
+    "q3": "Ile trwa realizacja?",
+    "a3": "Strony wizytówki to zwykle 2-3 tygodnie. Zaawansowane portale B2B mogą wymagać od 4 do 8 tygodni pracy w zależności od złożoności.",
+    "q4": "Czy pomagasz w utrzymaniu strony?",
+    "a4": "Oczywiście, oferuję pakiety opieki technicznej gwarantujące aktualizacje bezpieczeństwa i błyskawiczne wsparcie."
+  },
+  "order": {
+    "title": "Formularz Zamówienia",
+    "desc": "Wypełnij poniższe dane, abym mógł przygotować dla Ciebie szczegółową ofertę oraz projekt Umowy o Zlecenie.",
+    "clientType": "Typ Klienta",
+    "company": "Firma (B2B)",
+    "private": "Osoba Prywatna (B2C)",
+    "nip": "NIP (Opcjonalnie)",
+    "details": "Szczegóły Projektu",
+    "submit": "Wyślij Zapytanie"
+  },
+  "offer": {
+    "title": "Strony Internetowe Szyte na Miarę",
+    "b2bTitle": "Dla Firm",
+    "b2bDesc": "Zbuduj silną przewagę konkurencyjną. Skalowalne aplikacje React, panele analityczne, systemy B2B i najwyższe bezpieczeństwo korporacyjne. Odpowiednio zoptymalizowane pod SEO, by dominować w wyszukiwarkach.",
+    "b2cTitle": "Dla Ciebie",
+    "b2cDesc": "Tworzę zjawiskowe, osobiste wizytówki, portfolia i małe strony. Idealne rozwiązanie, aby zaprezentować swoją markę osobistą w internecie, z zachowaniem absolutnie najwyższej estetyki."
+  }
+}
