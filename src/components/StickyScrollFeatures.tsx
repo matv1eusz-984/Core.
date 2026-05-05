@@ -147,14 +147,14 @@ export default function StickyScrollFeatures({ dict }: { dict: any }) {
 
           {/* Visual 5: AI / Visionary */}
           <motion.div style={{ opacity: op5 }} className="absolute inset-x-0 bottom-10 top-20 md:top-0 flex items-center justify-center pointer-events-none">
-             <div className="relative w-80 h-80">
-                <Sparkles className="absolute top-0 right-0 text-primary w-12 h-12 animate-pulse" />
-                <Cpu className="absolute bottom-0 left-0 text-accent w-16 h-16 animate-bounce" />
+             <div className="relative w-64 h-64 md:w-80 md:h-80">
+                <Sparkles className="absolute top-4 right-4 text-primary w-10 h-10 md:w-12 md:h-12 animate-pulse" />
+                <Cpu className="absolute bottom-4 left-4 text-accent w-12 h-12 md:w-16 md:h-16 animate-bounce" />
                 <motion.div 
                    style={{ opacity: v5Opacity }}
                    className="absolute inset-0 flex items-center justify-center"
                 >
-                   <div className="w-32 h-32 md:w-48 md:h-48 bg-gradient-to-tr from-primary/40 to-accent/40 blur-[40px] md:blur-[80px] rounded-full animate-pulse" />
+                   <div className="w-24 h-24 md:w-48 md:h-48 bg-gradient-to-tr from-primary/40 to-accent/40 blur-[30px] md:blur-[80px] rounded-full animate-pulse" />
                    <div className="relative z-10 text-4xl md:text-6xl font-black text-gradient italic tracking-tighter">AI CORE</div>
                 </motion.div>
              </div>
