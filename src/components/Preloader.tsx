@@ -12,7 +12,7 @@ export default function Preloader() {
   useEffect(() => {
     setIsMounted(true);
     // Only show preloader once per session
-    const hasLoaded = sessionStorage.getItem("rn_preloader_done");
+    const hasLoaded = sessionStorage.getItem("core_preloader_done");
     if (hasLoaded) {
       setPreloaderDone(true);
       return;
@@ -29,7 +29,7 @@ export default function Preloader() {
         clearInterval(interval);
         setTimeout(() => {
           setIsLoading(false);
-          sessionStorage.setItem("rn_preloader_done", "true");
+          sessionStorage.setItem("core_preloader_done", "true");
           // Wait for exit animation to finish before triggering main app animations
           setTimeout(() => setPreloaderDone(true), 1200);
         }, 500); // Hold at 100% for a moment
@@ -61,7 +61,7 @@ export default function Preloader() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="text-4xl font-bold tracking-[0.3em] uppercase"
             >
-              RN Agency
+              CORE.
             </motion.div>
             <div className="relative w-64 h-[2px] bg-white/10 rounded-full overflow-hidden">
               <motion.div 
