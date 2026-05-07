@@ -15,9 +15,9 @@ export async function sendEmail(formData: FormData) {
     
     // TODO: Zastąp 'YOUR_TEMPLATE_ID' oraz 'YOUR_PUBLIC_KEY' prawidłowymi danymi z panelu EmailJS
     const data = {
-      service_id: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-      template_id: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-      user_id: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+      service_id: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || process.env.EMAILJS_SERVICE_ID,
+      template_id: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || process.env.EMAILJS_TEMPLATE_ID,
+      user_id: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || process.env.EMAILJS_PUBLIC_KEY,
       template_params: {
         from_name: name,
         reply_to: email,
