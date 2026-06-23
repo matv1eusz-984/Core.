@@ -3,7 +3,7 @@
     "title": "OD kliknięcia\nDO klienta\nŁowimy dla Ciebie \n...klientów\n... w sieci",
     "subtitle": "Nie robimy zwykłych wizytówek. Tworzymy ultraszybkie, zjawiskowe strony internetowe, które budują prestiż Twojej marki i zamieniają odwiedzających w płacących klientów.",
     "cta": "Rozpocznij Projekt",
-    "viewWork": "Zobacz Nasze Prace"
+    "viewWork": "Omów Twój Projekt"
   },
   "services": {
     "title": "Nasze Usługi",
@@ -76,13 +76,29 @@
     "subtitle": "Nie korzystamy z szablonów i nie rozliczamy się 'za ilość podstron'. Budujemy strony z wykorzystaniem najnowocześniejszych technologii i z bezkompromisową dbałością o każdy pojedynczy detal.",
     "p1Title": "Cyfrowe Fundamenty",
     "p1Price": "Na miarę",
-    "p1Features": ["Dedykowana architektura UI/UX", "Nowoczesne frameworki React", "Nieskazitelne standardy wydajności", "Semantyczna i rygorystyczna budowa"],
+    "p1Features": [
+      "Dedykowana architektura UI/UX",
+      "Nowoczesne frameworki React",
+      "Nieskazitelne standardy wydajności",
+      "Semantyczna i rygorystyczna budowa"
+    ],
     "p2Title": "Wizja Ultra-Premium",
     "p2Price": "Dopracowane",
-    "p2Features": ["Zjawiskowe elementy 3D i WebGL", "Architektura Edge w Next.js", "Perfekcyjne mikro-interakcje", "Złożone sekwencje Framer Motion", "Globalna dystrybucja CDN"],
+    "p2Features": [
+      "Zjawiskowe elementy 3D i WebGL",
+      "Architektura Edge w Next.js",
+      "Perfekcyjne mikro-interakcje",
+      "Złożone sekwencje Framer Motion",
+      "Globalna dystrybucja CDN"
+    ],
     "p3Title": "Ekosystem Enterprise",
     "p3Price": "Skalowalne",
-    "p3Features": ["Złożone dedykowane backendy", "Integracja chmurowa", "Bezkompromisowe bezpieczeństwo", "Nieskończona Skalowalność"],
+    "p3Features": [
+      "Złożone dedykowane backendy",
+      "Integracja chmurowa",
+      "Bezkompromisowe bezpieczeństwo",
+      "Nieskończona Skalowalność"
+    ],
     "action": "Omów Twój Projekt",
     "trustInfo": "Pracujemy transparentnie. Wystawiamy faktury VAT, a płatności zabezpieczamy systemem Escrow (płacisz dopiero, gdy akceptujesz efekty naszej pracy)."
   },
