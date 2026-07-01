@@ -12,7 +12,7 @@ function FishingLine() {
   return (
     <div 
       onClick={() => setIsRetracted(true)}
-      className={`absolute bottom-[5%] md:bottom-[10%] right-4 md:left-[calc(100%+1rem)] h-[60vh] md:h-[70vh] w-[20px] md:-ml-[10px] cursor-pointer z-30 group flex justify-center ${isRetracted ? 'pointer-events-none' : 'pointer-events-auto'}`}
+      className={`hidden md:flex absolute bottom-[5%] md:bottom-[10%] right-4 md:left-[calc(100%+1rem)] h-[60vh] md:h-[70vh] w-[20px] md:-ml-[10px] cursor-pointer z-30 group justify-center ${isRetracted ? 'pointer-events-none' : 'pointer-events-auto'}`}
     >
       <motion.div 
         initial={{ height: 0 }}
