@@ -98,16 +98,32 @@ export default function Navbar({
                 </button>
               </div>
               <div className="flex flex-col gap-6 text-2xl font-bold uppercase tracking-tighter">
-                <Link href="/#pricing" className="hover:text-primary transition-colors">
+                <Link 
+                  href="/#pricing" 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="hover:text-primary transition-colors"
+                >
                   {dict.pricing}
                 </Link>
-                <Link href="/#nasze-uslugi" className="hover:text-primary transition-colors">
+                <Link 
+                  href="/#nasze-uslugi" 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="hover:text-primary transition-colors"
+                >
                   {dict.portfolio}
                 </Link>
-                <Link href="/oferta" className={`transition-colors ${pathname === '/oferta' ? 'text-primary' : ''}`}>
+                <Link 
+                  href="/oferta" 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`transition-colors ${pathname === '/oferta' ? 'text-primary' : ''}`}
+                >
                   {dict.offer}
                 </Link>
-                <Link href="/zamow" className={`transition-colors ${pathname === '/zamow' ? 'text-primary' : ''}`}>
+                <Link 
+                  href="/zamow" 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`transition-colors ${pathname === '/zamow' ? 'text-primary' : ''}`}
+                >
                   {dict.order}
                 </Link>
                 <div className="pt-8 border-t border-white/10">
@@ -115,6 +131,7 @@ export default function Navbar({
                     email="rnstock.trades@gmail.com" 
                     copiedText={dict.copied} 
                     className="text-primary text-lg"
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {dict.contact}
                   </CopyMailto>

@@ -9,13 +9,15 @@ export function CopyMailto({
   children, 
   className = "",
   copiedText = "Copied to clipboard",
-  as: Component = "button"
+  as: Component = "button",
+  onClick
 }: { 
   email?: string; 
   children: React.ReactNode; 
   className?: string;
   copiedText?: string;
   as?: any;
+  onClick?: () => void;
 }) {
   const [copied, setCopied] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -28,6 +30,7 @@ export function CopyMailto({
     e.preventDefault();
     navigator.clipboard.writeText(email);
     setCopied(true);
+    if (onClick) onClick();
     setTimeout(() => {
       setCopied(false);
     }, 3000);
